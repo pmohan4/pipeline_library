@@ -2,12 +2,7 @@
 def call() {
     node {
         def mvnHome
-        stage('Preparation') { // for display purposes
-            // Get some code from a GitHub repository
-            //git 'https://github.com/jglick/simple-maven-project-with-tests.git'
-            // Get the Maven tool.
-            // ** NOTE: This 'M3' Maven tool must be configured
-            // **       in the global configuration.       
+        stage('Preparation') {
             checkout(scm)
             mvnHome = tool 'M3'
         }
