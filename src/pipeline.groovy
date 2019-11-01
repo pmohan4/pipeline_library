@@ -1,4 +1,4 @@
-def callPipeline(){
+def call(){
   node {
      def mvnHome
      stage('Preparation') { // for display purposes
